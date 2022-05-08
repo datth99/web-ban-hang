@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\Auth\AuthController;
+use App\Http\Controllers\Admin\Product\ProductController;
 use App\Models\Test;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
