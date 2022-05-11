@@ -49,12 +49,13 @@ class ProductController extends Controller
 
         return redirect()->route('product');
     }
+
     public function edit($id)
     {
-        
         $product = Product::where("id", $id)->get()->toArray();
         return view("backend/products/editproduct", ["product"=>$product[0]]);
     }
+
     public function update(EditProductRequest $EditProductRequest, $id)
     {
         $product = Product::find($id);
@@ -83,6 +84,7 @@ class ProductController extends Controller
         $EditProductRequest->session()->flash("alert", "Đã sửa thành công !");
         return redirect("/admin/product");
     }
+    
     public function delete(Request $request, $id)
     {
         $product = Product::find($id);

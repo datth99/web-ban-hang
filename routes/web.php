@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\Auth\AuthController;
 use App\Http\Controllers\Admin\Product\ProductController;
+use App\Http\Controllers\HomeController;
 use App\Models\Test;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -39,9 +40,7 @@ Route::group(["prefix" => "admin", "middleware" => "checkadmin"], function () {
         Route::get("/delete/{id}", [ProductController::class, "delete"]);
     });
 
-    Route::group(["prefix"=>"order"], function(){
-        Route::get("/", [OrderController::class, "order"])->name('order');;
-        Route::get("/details/{id}", [OrderController::class, "details"]);
-        Route::get("/processed", [OrderController::class, "processed"]);
-    });
 });
+// Đường link dẫn tới website và nó chạy qua controller và gọi hàm của nó
+Route::get("/", [HomeController::class, "listProduct"]);
+Route::get("/search-product", [HomeController::class, "searchProduct"]);

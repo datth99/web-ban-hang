@@ -26,14 +26,6 @@ class UserSeeder extends Seeder
                 'level' => 1
             ],
             [
-                'fullname' => 'Vietpro Academy', 
-                'password'=> Hash::make("123456"), 
-                'email' => 'vietpro.edu.vn@gmail.com', 
-                'phone' => '0123456789', 
-                'address'=>'Hà Nội',
-                'level' => 1
-            ],
-            [
                 'fullname' => 'Nguyễn Văn A', 
                 'password'=> Hash::make("123456"), 
                 'email' => 'nguyenvana@gmail.com', 

@@ -9,10 +9,9 @@
                     <use xlink:href="#stroked-bag"></use>
                 </svg> Sản phẩm</a></li>
         <li role="presentation" class="divider"></li>
-        <li><a href="/"><svg class="glyph stroked male-user">
+        <li><a href="#"><svg class="glyph stroked male-user">
                     <use xlink:href="#stroked-male-user"></use>
                 </svg> Quản lý thành viên</a></li>
-
     </ul>
 
 </div>
